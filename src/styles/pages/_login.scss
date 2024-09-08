@@ -50,7 +50,7 @@
     }
 
     
-    @include breakPoints("large"){
+    @include breakPoints("medium"){
         width: 50%;
     }
     @include breakPoints("small"){
