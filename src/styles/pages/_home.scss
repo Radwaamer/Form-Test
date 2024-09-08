@@ -1,0 +1,9 @@
+.stroke-text{
+    @include centerPosition();
+}
+.stroke-text h1{
+    -webkit-text-fill-color: $body_color;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: $main_color;
+    animation: textShadow 1.5s infinite ease;
+}

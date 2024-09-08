@@ -1,0 +1,9 @@
+@keyframes textShadow {
+    0%,50%{
+        text-shadow: none;
+    }50%,80%{
+        text-shadow: 1px 1px 2px $white_color;
+    }80%,100%{
+        text-shadow: none;
+    }
+}

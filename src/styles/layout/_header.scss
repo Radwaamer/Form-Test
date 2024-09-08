@@ -1,0 +1,37 @@
+.navbar {
+    background-color: $black_color;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.navbar .logo img {
+    width: 3rem;
+}
+
+.navbar h1 {
+    font-size: 1.5rem;
+    color: $white_color;
+}
+
+.go-to-website {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: $main_color;
+    color: $black_color;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.go-to-website img{
+    width: 1rem;
+}

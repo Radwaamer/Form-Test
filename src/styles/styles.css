@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+@keyframes textShadow {
+  0%, 50% {
+    text-shadow: none;
+  }
+  50%, 80% {
+    text-shadow: 1px 1px 2px #fff;
+  }
+  80%, 100% {
+    text-shadow: none;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  background-color: #191919;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: #000;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar .logo img {
+  width: 3rem;
+}
+
+.navbar h1 {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.go-to-website {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #FCEA47;
+  color: #000;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.go-to-website img {
+  width: 1rem;
+}
+
+.stroke-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 4rem);
+}
+
+.stroke-text h1 {
+  -webkit-text-fill-color: #191919;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #FCEA47;
+  animation: textShadow 1.5s infinite ease;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 4rem);
+}
+
+.login-box {
+  background-color: #000;
+  padding: 3rem;
+  border-radius: 10px;
+  width: 35%;
+  text-align: center;
+}
+.login-box img.login-logo {
+  width: 12rem;
+}
+.login-box h2 {
+  margin: 1.5rem 0;
+  font-size: 1.8rem;
+}
+.login-box label {
+  display: block;
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: 2px solid #FCEA47;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+}
+.login-box input::-moz-placeholder {
+  color: #999;
+}
+.login-box input::placeholder {
+  color: #999;
+}
+.login-box .login-btn {
+  padding: 0.7rem;
+  width: 50%;
+  margin-top: 1.7rem;
+  background-color: #FCEA47;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+@media (min-width: 1200px) {
+  .login-box .login-btn {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .login-box .login-btn {
+    width: 75%;
+  }
+}/*# sourceMappingURL=styles.css.map */

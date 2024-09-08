@@ -1,0 +1,60 @@
+.login-container {
+    @include centerPosition();
+}
+
+.login-box {
+    background-color: $black_color;
+    padding: 3rem;
+    border-radius: 10px;
+    width: 35%;
+    text-align: center;
+
+    img.login-logo {
+        width: 12rem;
+    }
+
+    h2 {
+        margin: 1.5rem 0;
+        font-size: 1.8rem;
+    }
+
+    label {
+        display: block;
+        text-align: left;
+        margin-bottom: 0.5rem;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 1rem;
+        border: 2px solid $main_color;
+        border-radius: 5px;
+        background-color: $black_color;
+        color: $white_color;
+        &::placeholder {
+            color: #999;
+        }
+    }
+
+    .login-btn {
+        padding: 0.7rem;
+        width: 50%;
+        margin-top: 1.7rem;
+        background-color: $main_color;
+        color: $black_color;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+
+        @include breakPoints("large"){
+            width: 50%;
+        }
+        @include breakPoints("small"){
+            width: 75%;
+        }
+        
+    }
+
+}

@@ -1,0 +1,30 @@
+// break points
+@mixin breakPoints($point){
+    @if $point == "mobile" {
+        @media (max-width:$smallScreen) {
+            @content;
+        }
+    }
+    @else if $point == "small" {
+        @media (max-width:$mediumScreen) {
+            @content;
+        }
+    }
+    @else if $point == "medium" {
+        @media (max-width:$largeScreen){
+            @content;
+        }
+    }
+    @else if $point == "large" {
+        @media (min-width:$xlargeScreen) {
+            @content;
+        }
+    }
+}
+
+@mixin centerPosition(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 4rem);
+}
